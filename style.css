@@ -175,7 +175,6 @@ input::-webkit-inner-spin-button {
 }
 
 .welcome-text {
-  /* margin-top: 55px; */
   display: flex;
   flex-direction: column;
   padding-top: 120px;
@@ -373,8 +372,6 @@ input::-webkit-inner-spin-button {
   border: none;
 }
 
-
-
 /* 
 *
 * Video
@@ -384,19 +381,35 @@ input::-webkit-inner-spin-button {
 .video-container {
   display: flex;
   flex-direction: column;
-  height: 106.5vh;
+  height: 120vh;
+}
+
+.video-title {
+  margin-top: 40px;
+  max-width: 45%;
+}
+
+.video-caption {
+  margin-top: 3.2%;
+  margin-left: 7.8%;
+  max-width: 48%;
+  font-weight: 300;
+  font-size: var(--font1);
+  line-height: 38px;
 }
 
 .videoplayer {
-  margin-top: 6.2%;
+  margin-top: 4%;
 }
 
 .videoplayer-video {
   display: flex;
   justify-content: center;
   margin-bottom: 0%;
-  height: 629px;
-  background-image: url(assets/video/poster.jpg);
+  height: 649px;
+  background-image: url(assets/video/poster0.jpg);
+  background-size: cover;
+
 }
 
 .videoplayer-main-play {
@@ -413,6 +426,12 @@ input::-webkit-inner-spin-button {
   width: 1440px;
   height: 85px;
   background-color: var(--dark);
+  margin-bottom: 40px;
+}
+
+.video-slider {
+  display: flex;
+  justify-content: space-between;
 }
 
 .videoplayer-button-little {
@@ -431,24 +450,14 @@ input::-webkit-inner-spin-button {
   margin-top: 5px;
 }
 
-.videoplayer-button-prev {
-  margin-left: 40px;
-  background-image: url(assets/svg/videoplayer/backArrow.svg);
-}
-
 .videoplayer-button-play {
   margin-left: 36px;
   background-image: url(assets/svg/videoplayer/littlePlay.svg);
 }
 
-.videoplayer-button-next {
-  margin-left: 30px;
-  background-image: url(assets/svg/videoplayer/forwardArrow.svg);
-}
-
 .videoplayer-progress-bar {
   margin-left: 38px;
-  width: 820px;
+  width: 940px;
 }
 
 .videoplayer-button-volume {
@@ -458,12 +467,12 @@ input::-webkit-inner-spin-button {
 }
 
 .videoplayer-volume-bar {
-  margin-left: 18px;
+  margin-left: 40px;
   width: 155px;
 }
 
 .videoplayer-button-fullscreen {
-  margin-left: 46px;
+  margin-left: 50px;
   background-image: url(assets/svg/videoplayer/fullscreen.svg);
 }
 
@@ -473,18 +482,7 @@ input::-webkit-inner-spin-button {
   margin-top: 42px;
 }
 
-.video-title {
-  max-width: 45%;
-}
 
-.video-caption {
-  margin-top: 0.4%;
-  margin-left: 7.8%;
-  max-width: 48%;
-  font-weight: 300;
-  font-size: var(--font1);
-  line-height: 38px;
-}
 
 /* 
 *
@@ -493,6 +491,7 @@ input::-webkit-inner-spin-button {
 */
 
 .tickets-container {
+  margin-top: 270px;
   height: 94vh;
 }
 .tickets-title {
