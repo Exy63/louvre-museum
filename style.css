@@ -489,6 +489,33 @@ input::-webkit-inner-spin-button {
   margin-right: auto;
 }
 
+/* 
+*
+* Gallery
+*
+*/
+
+#gallery {
+  margin-top: 267px;
+  height: 232vh;
+  background-color: #030303;
+}
+
+.gallery-title {
+  padding-top: 74px;
+  margin-left: 240px;
+}
+
+.first-col {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-col > img {
+margin-top: 25px;
+}
+
 
 /* 
 *
