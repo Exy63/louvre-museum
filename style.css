@@ -1,4 +1,8 @@
-/* vars */
+/* 
+*
+* vars 
+*
+*/
 
 :root {
   --dark: #151719;
@@ -10,9 +14,14 @@
   --font3: 32px;
 }
 
-/* GLOBAL */
+/* 
+*
+* GLOBAL
+*
+*/
 
 html {
+  /* background-color: #030303; */
   scroll-behavior: smooth;
 }
 body {
@@ -103,13 +112,17 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-/* Header */
+/* 
+*
+* Header
+*
+*/
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20.4vh;
+  height: 12vh;
 }
 
 .logo {
@@ -134,11 +147,11 @@ input::-webkit-inner-spin-button {
 
 .navbar {
   display: flex;
-  max-width: 720px;
+  width: 770px;
 }
 
 .nav-item {
-  margin: 7px 0 0 76px;
+  margin: 7px 0 0 55px;
   font-family: Roboto;
   font-weight: 100;
   font-size: var(--font1);
@@ -150,20 +163,26 @@ input::-webkit-inner-spin-button {
   margin-left: 0;
 }
 
-/* Welcome */
+/* 
+*
+* Welcome
+*
+*/
 
 .welcome-container {
   position: relative;
-  height: 79.6vh;
+  height: 88vh;
 }
 
 .welcome-text {
+  /* margin-top: 55px; */
   display: flex;
   flex-direction: column;
   padding-top: 120px;
 }
 
 .welcome-title {
+  margin-top: 50px;
   z-index: 1;
 }
 
@@ -195,21 +214,18 @@ input::-webkit-inner-spin-button {
   color: var(--light);
 }
 
-.welcome-image {
-  position: absolute;
-  left: 460px;
-  bottom: 0;
-  width: 84.7%;
-}
-
-/* Visiting */
+/* 
+*
+* Visiting
+*
+*/
 
 .visiting-container {
   height: 125.5vh;
 }
 
 .visiting-title {
-  margin-top: 76px;
+  margin-top: 75px;
 }
 .visiting-hr {
   margin-top: 24px;
@@ -262,7 +278,11 @@ input::-webkit-inner-spin-button {
   color: var(--dark);
 }
 
-/* Explore */
+/* 
+*
+* Explore
+*
+*/
 
 .explore-container {
   display: flex;
@@ -295,12 +315,71 @@ input::-webkit-inner-spin-button {
   line-height: 38px;
 }
 
-.explore-image {
-  margin-top: 12.5%;
-  margin-left: 8%;
+.image-comparison {
+  position: relative;
+  display: inline-block;
+  width: 720px;
+  width: 100%;
+  max-width: 720px;
+  overflow: hidden;
+  margin-left: 47px;
+  margin-top: 90px;
 }
 
-/* Video */
+.image-comparison__before {
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+}
+
+.image-comparison__image {
+  display: block;
+}
+
+/* Ползунок */
+.image-comparison__slider {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 100%;
+  cursor: col-resize;
+  outline: none;
+  border: none;
+}
+
+/* Стрелки */
+.image-comparison__slider::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 15px);
+  left: -14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent url('./img/arrows.png') no-repeat center;
+  border: 2px solid #fff;
+  background-size: 90%;
+}
+
+.image-comprison__slider:hover,
+.image-comprison__slider:focus,
+.image-comprison__slider:hover::before,
+.image-comprison__slider:focus::before {
+  background-color: #ccc;
+  outline: none;
+  border: none;
+}
+
+
+
+/* 
+*
+* Video
+*
+*/
 
 .video-container {
   display: flex;
@@ -407,7 +486,11 @@ input::-webkit-inner-spin-button {
   line-height: 38px;
 }
 
-/* Tickets */
+/* 
+*
+* Tickets
+*
+*/
 
 .tickets-container {
   height: 94vh;
@@ -563,7 +646,11 @@ input::-webkit-inner-spin-button {
   background-color: var(--gold);
 }
 
-/* Contacts */
+/* 
+*
+* Contacts
+*
+*/
 
 .contacts-container {
   height: 101.6vh;
@@ -604,7 +691,11 @@ input::-webkit-inner-spin-button {
   margin-left: 88px;
 }
 
-/* Footer */
+/* 
+*
+* Footer
+*
+*/
 
 .footer-container {
   display: flex;
@@ -651,7 +742,11 @@ input::-webkit-inner-spin-button {
     brightness(95%) contrast(83%);
 }
 
-/* fonts */
+/* 
+*
+* Fonts
+*
+*/
 
 @font-face {
   font-family: "Forum";
@@ -685,60 +780,3 @@ input::-webkit-inner-spin-button {
 
 
 
-.image-comparison {
-  position: relative;
-  display: inline-block;
-  width: 720px;
-  width: 100%;
-  max-width: 720px;
-  overflow: hidden;
-  margin-left: 47px;
-  margin-top: 90px;
-}
-
-.image-comparison__before {
-  position: absolute;
-  width: 50%;
-  overflow: hidden;
-}
-
-.image-comparison__image {
-  display: block;
-}
-
-/* Ползунок */
-.image-comparison__slider {
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2px;
-  height: 100%;
-  cursor: col-resize;
-  outline: none;
-  border: none;
-}
-
-/* Стрелки */
-.image-comparison__slider::before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 15px);
-  left: -14px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: transparent url('./img/arrows.png') no-repeat center;
-  border: 2px solid #fff;
-  background-size: 90%;
-}
-
-.image-comprison__slider:hover,
-.image-comprison__slider:focus,
-.image-comprison__slider:hover::before,
-.image-comprison__slider:focus::before {
-  background-color: #ccc;
-  outline: none;
-  border: none;
-}
