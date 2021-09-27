@@ -823,6 +823,10 @@ input::-webkit-inner-spin-button {
   letter-spacing: 2px;
 }
 
+.little-footer > p {
+  margin-left: 70px;
+}
+
 /* 
 *
 * Fonts
