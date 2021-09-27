@@ -512,13 +512,14 @@ input::-webkit-inner-spin-button {
 
 #gallery {
   margin-top: 267px;
-  height: 232.6vh;
   background-color: #030303;
 }
 
 .gallery-title {
   padding-top: 74px;
   margin-left: 240px;
+  width: 1440px;
+  margin: auto;
 }
 
 .gallery-col {
@@ -750,6 +751,7 @@ input::-webkit-inner-spin-button {
 }
 
 .contacts-content-caption {
+  color: #030303;
   margin-top: 20px;
   font-weight: 300;
   font-size: var(--font1);
@@ -760,6 +762,10 @@ input::-webkit-inner-spin-button {
   margin-left: 88px;
 }
 
+#phone, #mail {
+  color: #030303;
+}
+
 /* 
 *
 * Footer
@@ -768,7 +774,7 @@ input::-webkit-inner-spin-button {
 
 .footer-container {
   display: flex;
-  height: 28vh;
+  padding-bottom: 35px;
 }
 
 .footer-logo {

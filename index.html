@@ -50,9 +50,12 @@
               src="./assets/img/welcome-slider/1.jpg"
               width="1000"
               height="750"
-              alt=""
+              alt="mona lisa"
             />
-            <div class="welcome-pagination"></div>
+            <div class="welcome-pagination">
+              <button></button>
+              <button></button>
+            </div>
           </div>
         </div>
       </section>
@@ -231,7 +234,6 @@
               height="254"
               src="https://www.youtube.com/embed/aWmJ5DgyWPI"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -240,7 +242,6 @@
               height="254"
               src="https://www.youtube.com/embed/Vi5D6FKhRmo"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -249,7 +250,6 @@
               height="254"
               src="https://www.youtube.com/embed/NOhDysLnTvY"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -259,6 +259,8 @@
             src="./assets/video/carousel.png"
             alt="carousel"
           />
+          <button></button>
+          <button></button>
         </div>
       </section>
 
@@ -267,81 +269,91 @@
         <div class="gallery-pictures">
           <div class="gallery-col">
             <img
+            id="image1"
               src="./assets/img/galery/galery2.jpg"
               width="456"
               height="570"
-              alt="12312312"
+              alt="picture"
             />
             <img
+            id="image2"
               src="./assets/img/galery//galery9.jpg"
               width="456"
               height="570"
-              alt="12312312"
+              alt="picture"
             />
             <img
+            id="image3"
               src="./assets/img/galery/galery4.jpg"
               width="456"
               height="456"
-              alt="1231231"
+              alt="picture"
             />
             <img
+            id="image4"
               src="./assets/img/galery/galery6.png"
               width="456"
               height="242"
-              alt="12312312"
+              alt="picture"
             />
           </div>
           <div class="second-col gallery-col">
             <img
+            id="image5"
               src="./assets/img/galery/galery1.jpg"
               width="456"
               height="456"
-              alt="12312312"
+              alt="picture"
             />
             <img
+            id="image6"
               src="./assets/img/galery//galery8.jpg"
               width="456"
               height="570"
-              alt="12312312"
+              alt="picture"
             />
             <img
+            id="image7"
               src="./assets/img/galery/galery3.jpg"
               width="456"
               height="570"
-              alt="1231231"
+              alt="picture"
             />
             <img
+            id="image8"
               src="./assets/img/galery/galery5.png"
               width="456"
               height="292"
-              alt="12312312"
+              alt="picture"
             />
           </div>
 
           <div class="gallery-col">
             <img
+            id="image9"
               src="./assets/img/galery/galery7.jpg"
               width="456"
               height="570"
-              alt="12312312"
+              alt="picture"
             />
             <img
+            id="image10"
               src="./assets/img/galery//galery10.jpg"
               width="456"
-              height="570"
-              alt="12312312"
+              height="456"
+              alt="picture"
             />
             <img
+            id="image11"
               src="./assets/img/galery/galery15.jpg"
               width="456"
               height="456"
-              alt="1231231"
+              alt="picture"
             />
             <img
-              src="./assets/img/galery/galery6.png"
-              width="456"
-              height="242"
-              alt="12312312"
+            id="image12"
+              src="./assets/img/galery/galery12.jpg"
+              alt="picture"
             />
           </div>
         </div>
@@ -406,7 +418,7 @@
                     class="ticket-imput-number"
                     type="number"
                     min="0"
-                    max="10"
+                    max="20"
                     value="1"
                   />
                   <button
@@ -430,7 +442,7 @@
                     class="ticket-imput-number"
                     type="number"
                     min="0"
-                    max="10"
+                    max="20"
                     value="1"
                   />
                   <button
@@ -461,9 +473,11 @@
                 address: 75001 Paris, France
               </p>
               <p class="contacts-content-caption">
+                <a href="tel:+330140205050" id='phone'>
                 phone: +33(0) 1 40 20 50 50
+                </a>
               </p>
-              <p class="contacts-content-caption">mail: info@louvre.fr</p>
+              <p class="contacts-content-caption"> <a href="mailto:info@louvre.fr" id='mail'>mail: info@louvre.fr</a></p>
             </div>
             <div class="contacts-map">
               <img
@@ -553,7 +567,7 @@
       <p>The Rolling Scopes School</p>
       <p>Ilya Prikazchikov</p>
     </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./sctipt.js"></script>
   </body>
 </html>
-<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./sctipt.js"></script>
