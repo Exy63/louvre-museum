@@ -333,12 +333,14 @@ input::-webkit-inner-spin-button {
 .image-comparison {
   position: relative;
   display: inline-block;
-  width: 720px;
-  width: 100%;
   max-width: 720px;
   overflow: hidden;
-  margin-left: 47px;
+  margin-left: 45px;
   margin-top: 90px;
+}
+
+.image-comparison > img {
+  width: 100%;
 }
 
 .image-comparison__before {
