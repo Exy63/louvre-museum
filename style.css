@@ -514,6 +514,13 @@ input::-webkit-inner-spin-button {
 
 .first-col > img {
 margin-top: 25px;
+margin-left: 7px;
+margin-right: 7px;
+}
+
+.gallery-pictures {
+  display: flex;
+  justify-content: center;
 }
 
 
