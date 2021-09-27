@@ -213,6 +213,22 @@ input::-webkit-inner-spin-button {
   color: var(--light);
 }
 
+.welcome-image {
+  position: relative;
+  bottom: 540px;
+  left: 440px;
+}
+
+.welcome-pagination {
+  width: 600px;
+  height: 100px;
+  position: relative;
+  bottom: 600px;
+  left: 840px;
+  background-image: url(./assets/img/welcome_pagination.png);
+  background-size: cover;
+}
+
 /* 
 *
 * Visiting
