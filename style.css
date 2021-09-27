@@ -514,8 +514,8 @@ input::-webkit-inner-spin-button {
 
 .gallery-col > img {
 margin-top: 25px;
-margin-left: 20px;
-margin-right: 7px;
+margin-left: 17px;
+margin-right: 17px;
 }
 
 .gallery-pictures {
@@ -754,12 +754,17 @@ margin-right: 7px;
 
 .footer-container {
   display: flex;
-  height: 31.5vh;
+  height: 28vh;
 }
 
 .footer-logo {
   margin-top: 80px;
   align-items: unset;
+}
+
+.footer-logo > .logo-name {
+  margin-left: 27px;
+  margin-top: 4px;
 }
 
 .footer-nav-bar {
@@ -770,7 +775,7 @@ margin-right: 7px;
 }
 
 .footer-nav-item {
-  margin: 23px 47px 0 55px;
+  margin: 23px 47px 0 50px;
   width: 150px;
   height: 26px;
   text-align: center;
@@ -788,7 +793,7 @@ margin-right: 7px;
 
 .social-icon {
   display: inline;
-  margin-left: 18px;
+  margin-left: 17px;
   -webkit-transition: 0.3s ease;
 }
 
